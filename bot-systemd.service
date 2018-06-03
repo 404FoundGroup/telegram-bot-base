@@ -1,0 +1,9 @@
+[Unit]
+Description=Bot Service Description
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 manage.py startbot
+WorkingDirectory=/path/to/project/root
+[Install]
+WantedBy=multi-user.target
